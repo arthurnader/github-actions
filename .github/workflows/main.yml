@@ -35,7 +35,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          Get-Content .\test_calculator.py | python -m unittest -
+          python -m unittest test_calculator
 
   test-macos:
     runs-on: macos-latest
