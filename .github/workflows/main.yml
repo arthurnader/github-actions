@@ -20,3 +20,34 @@ jobs:
 
       - name: Run Tests
         run: python -m unittest test_calculator.py
+
+  test-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Run Tests
+        run: |
+          Get-Content .\test_calculator.py | python -m unittest -
+
+  test-macos:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Run Tests
+        run: python -m unittest test_calculator.py
