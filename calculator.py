@@ -14,3 +14,6 @@ def soma(a, b):
 
 def subtracao(a, b):
     return a-b
+
+def soma_de_quadrados(a, b):
+    return a*a + b*b
