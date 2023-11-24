@@ -1,5 +1,5 @@
 import unittest
-from calculator import fatorial, exponenciacao, logaritmo
+from calculator import fatorial, exponenciacao, logaritmo, soma, subtracao, soma_de_quadrados
 
 class TestCalculator(unittest.TestCase):
 
