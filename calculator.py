@@ -8,3 +8,6 @@ def exponenciacao(base, expoente):
 
 def logaritmo(numero, base):
     return math.log(numero, base)
+
+def soma(a, b):
+    return a+b
