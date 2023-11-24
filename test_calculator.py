@@ -17,5 +17,10 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(logaritmo(16, 2), 4)
         self.assertEqual(logaritmo(100, 10), 2)
 
+    def test_operacos_basicas(self):
+        self.assertEqual(soma(6, 2), 8)
+        self.assertEqual(subtracao(10, 16), -6)
+        self.assertEqual(soma_de_quadrados(3,4), 25)
+
 if __name__ == '__main__':
     unittest.main()
